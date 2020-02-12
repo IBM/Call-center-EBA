@@ -16,7 +16,6 @@ function(
 			    _scPlatformUIFmkImplUtils
 ){ 
 	return _dojodeclare("extn.home.portlets.OrderPortletExtn", [_extnOrderPortletExtnUI],{
-	// custom code here
 
 
 	LoadEBA: function(event, bEvent, ctrl, args){
