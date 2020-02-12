@@ -4,7 +4,7 @@ Steps in the Call Center EBA Integration
 
 2) To get the access key, Go to eba.ibm.com login with your ID and go to the settings tab
 
-3) Generate the public key and private using the command specifies from the settings page of EBA
+3) Generate the public key and private using the command specified in the settings page of EBA
 
 4) Run the nodeJS script in the access_token folder by replacing the necessary parameter and the PATH to the generated privatekey
 
