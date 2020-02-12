@@ -10,6 +10,4 @@ Steps in the Call Center EBA Integration
 
 5) copy the obtained access key and go to <OMS Installation folder>/extensions/isccs/webpages/home and open HomeExtn.js and replace the acess token in LoadEBA function and also provide the login user name name
 
-6) Open eba.ibm.com and import the yaml present in the GIT folder and provide the necessary URL for the data  
-
 
