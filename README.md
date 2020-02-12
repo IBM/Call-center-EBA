@@ -2,8 +2,7 @@ Steps in the Call Center EBA Integration
 
 1) Place the extensions folder contents  in the <CallCenter Installation Path>/extensions/
 
-To get the access key
-2) Go to eba.ibm.com login with your ID and go to the settings tab
+2) To get the access key, Go to eba.ibm.com login with your ID and go to the settings tab
 
 3) Generate the public key and private using the command specifies from the settings page of EBA
 
