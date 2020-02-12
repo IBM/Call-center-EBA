@@ -121,7 +121,7 @@ function(
 			currentPopupScreen = this;
             IBM_EBA.setup({
 					access_token:'',
-					agent_name: '',
+					agent_name: 'Expert Assistant',
 					disable_button: false,
 					disable_shadow: true,
 					loading_delay: 1000,
