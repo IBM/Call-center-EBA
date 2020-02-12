@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Controller
+    className="com.sterlingcommerce.ui.web.platform.controller.SCUIXAPIMashupController"
+    controllerId="extn.home.HomeExtnBehaviorController"
+    requestMethodSupported="POST" screenId="extn.home.HomeExtn">
+	<MashupRefs>
+        <MashupRef  mashupId="extn_eba_getOrderDetails"
+            mashupRefId="extn_eba_getOrderDetails" permissionId=""/>
+		<MashupRef  mashupId="extn_eba_getSessionDetails"
+            mashupRefId="extn_eba_getSessionDetails" permissionId=""/>
+		<MashupRef  mashupId="extn_getCompleteOrderDetails"
+            mashupRefId="extn_getCompleteOrderDetails" permissionId=""/>
+    </MashupRefs>
+</Controller>

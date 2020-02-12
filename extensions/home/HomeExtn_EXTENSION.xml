@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionMetaData>
+    <ScreenExtension extnClassName="HomeExtn" extnPackage="extn.home"
+        originalScreen="isccs.home.Home"
+        originalScreenPackage="isccs.home" type="diffrential">
+        <Subscribers>
+            <Local>
+                <Subscriber eventId="afterScreenInit" isExtn="true" sequence="19">
+                    <Handler methodName="test"/>
+                </Subscriber>
+            </Local>
+        </Subscribers>
+    </ScreenExtension>
+</ExtensionMetaData>

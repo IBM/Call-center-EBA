@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mashups>
+    <mashup description="get Catalog Org code" endpoint="EP_CONFIG" id="extn_getCountryList" mashuptype="XAPI" resourceId="" transactional="true">
+        <API Name="getCommonCodeList">
+            <Input>
+                <CommonCode CodeType="COUNTRY"/>
+            </Input>
+            <Template>
+                <CommonCodeList>
+                    <CommonCode CodeLongDescription="" CodeValue=""/>
+                </CommonCodeList>
+            </Template>
+        </API>
+        <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
+        <APINamespace inputNS="extn_getCountryList_input" outputNS="extn_getCountryList"/>
+        <AlternateResourceIds/>
+    </mashup>    
+	<mashup description="get order details for EBA pop up.." endpoint="EP_ORDER" id="extn_eba_getOrderDetails" mashuptype="XAPI" resourceId="" transactional="true">
+        <API Name="getOrderDetails">
+            <Input>
+                <Order EnterpriseCode="" OrderHeaderKey="" OrderNo=""/>
+            </Input>
+            <Template/>
+        </API>
+        <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
+        <APINamespace inputNS="extn_eba_getOrderDetails_input" outputNS="extn_eba_getOrderDetails_output"/>
+        <AlternateResourceIds/>
+    </mashup>
+	<mashup description="get EBA Session details" endpoint="EP_ORDER" id="extn_eba_getSessionDetails" mashuptype="XAPI" resourceId="" transactional="true">
+        <API Name="getCommonCodeList">
+            <Input/>
+            <Template/>
+        </API>
+        <classInformation name="com.ibm.sterling.ccce.mashup.GetSessionDetails"/>
+        <APINamespace inputNS="extn_eba_getSessionDetails_input" outputNS="extn_eba_getSessionDetails_output"/>
+        <AlternateResourceIds/>
+    </mashup>
+	<mashup description="" endpoint="EP_CONFIG" id="extn_getCompleteOrderDetails" mashuptype="XAPI" resourceId="" transactional="true">
+        <API Name="getCompleteOrderDetails">
+            <Input>
+                <Order ApplicationCode="xml:ApplicationInfo@ApplicationCode" ApplicationVersion="xml:ApplicationInfo@ApplicationCode" DisplayLocalizedFieldInLocale="xml:CurrentUser:/User/@Localecode" DocumentType="0001" EnterpriseCode="" OrderNo="" OrganizationCode="" SelectMethod="NO_LOCK"/>
+            </Input>
+            <Template>
+                <Order EnterpriseCode="" OrderHeaderKey="" OrderNo="" OrderType="" OrganizationCode="" ReceivingNode="" SellerOrganizationCode="">
+                    <Extn>
+                        <TrackingDetailList>
+                            <TrackingDetail ReturnTrackingNo="" ShipDate="" DeliveryDate="" Purpose=""/>
+                        </TrackingDetailList>
+                    </Extn>
+                    <PriceInfo Currency=""/>
+                    <References>
+                        <Reference Name="" Value=""/>
+                    </References>
+                    <OrderLines>
+                        <OrderLine DeliveryMethod="" OrderLineKey="" PrimeLineNo="">
+                            <Containers>
+                                <Container ShipmentContainerKey="">
+                                    <Shipment CarrierServiceCode="" DocumentType="" SCAC=""/>
+                                </Container>
+                            </Containers>
+                            <Item ItemDesc="" ItemID="" ItemShortDesc=""/>
+                            <ItemDetails>
+                                <Extn ExtnCode10=""/>
+                            </ItemDetails>
+                            <Extn ExtnReturnTrackingNo="" ExtnSerialNo="">
+                                <EXTNOrderLineTrackingList>
+                                    <EXTNOrderLineTracking Purpose="" ShipDate="" TrackingNo=""/>
+                                </EXTNOrderLineTrackingList>
+                            </Extn>
+                            <OrderDates>
+                                <OrderDate ActualDate="" DateTypeId=""/>
+                            </OrderDates>
+                        </OrderLine>
+                    </OrderLines>
+                    <PaymentMethods>
+                        <PaymentMethod CreditCardType="" PaymentReference1="" PaymentReference2="" PaymentReference3="" PaymentReference4="" PaymentReference5="" PaymentReference6="" PaymentReference7="" PaymentReference8="" PaymentReference9="" PaymentType="" PaymentTypeDesc="" TotalRefundedAmount=""/>
+                    </PaymentMethods>
+                    <OrderDates>
+                        <OrderDate ActualDate="" DateTypeId=""/>
+                    </OrderDates>
+                </Order>
+            </Template>
+        </API>
+        <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
+        <APINamespace inputNS="extn_getSalesCompleteOrderDetails_input" outputNS="extn_getSalesCompleteOrderDetails_output"/>
+        <AlternateResourceIds/>
+    </mashup>
+</mashups>

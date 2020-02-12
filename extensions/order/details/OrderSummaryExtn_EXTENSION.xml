@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionMetaData>
+    <ScreenExtension extnClassName="OrderSummaryExtn"
+        extnPackage="extn.order.details"
+        originalScreen="isccs.order.details.OrderSummary"
+        originalScreenPackage="isccs.order.details" type="diffrential">
+        <Items>
+            <Button _sc_extensibility_moveOrder="3"
+                _sc_extensibility_operation="insert"
+                _sc_extensibility_position="after"
+                _sc_extensibility_referenceUId="extn_datalabel"
+                label="$(_scBundle:Enterprise)" uId="extn_button"/>
+            <DataLabel _sc_extensibility_moveOrder="2"
+                _sc_extensibility_operation="insert"
+                _sc_extensibility_position="after"
+                _sc_extensibility_referenceUId="lblExchangeTypeDisplay"
+                uId="extn_datalabel" value="$(_scBundle:textYes)">
+                <BindingData>
+                    <SourceBinding
+                        namespace="getCompleteOrderDetails_output" path="Order.DisplayExchangeType"/>
+                </BindingData>
+            </DataLabel>
+        </Items>
+       <Subscribers>
+            <Local>
+                <Subscriber eventId="afterScreenInit" isExtn="true" sequence="51">
+                    <Handler methodName="OrderSummaryExtn"/>
+                </Subscriber>
+            </Local>
+        </Subscribers>
+    </ScreenExtension>
+</ExtensionMetaData>

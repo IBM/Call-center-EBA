@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionMetaData>
+    <ScreenExtension extnClassName="OrderPortletExtn"
+        extnPackage="extn.home.portlets"
+        originalScreen="isccs.home.portlets.OrderPortlet"
+        originalScreenPackage="isccs.home.portlets" type="diffrential">
+        <Items>
+            <TextField _sc_extensibility_operation="change" _sc_extensibility_referenceUId="txtEmail_Order"/>
+        </Items>
+        <Subscribers>
+            <Local>
+                <Subscriber eventId="txtEmail_Order_onKeyUp"
+                    isExtn="true" sequence="19">
+                    <Handler methodName="LoadEBA"/>
+                </Subscriber>
+                <Subscriber eventId="bFindOrder_onClick" isExtn="true" sequence="51">
+                    <Handler methodName="LoadEBA"/>
+                </Subscriber>
+            </Local>
+        </Subscribers>
+    </ScreenExtension>
+</ExtensionMetaData>

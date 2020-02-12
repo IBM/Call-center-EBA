@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mashups>
+    <mashup id="orderPortletList_getOrderList">
+        <API Name="getOrderList">
+            <Input>
+                <Order BillToID="" BuyerUserId=""
+                    CallingOrganizationCode="" CustomerEMailID=""
+                    CustomerEMailIDQryType="" CustomerFirstName=""
+                    CustomerLastName="" CustomerPONo=""
+                    CustomerPhoneNo="" CustomerZipCode=""
+                    DisplayLocalizedFieldInLocale="xml:CurrentUser:/User/@Localecode"
+                    DocumentType="" DraftOrderFlag="" EnterpriseCode=""
+                    FromOrderDate="" IgnoreOrdering="N"
+                    MaximumRecords="" OrderDateQryType="DATERANGE"
+                    OrderName="" OrderNameQryType="" OrderNo=""
+                    QueryTimeout="" ReadFromHistory="" TaxExemptFlag=""
+                    TaxExemptionCertificate="" ToOrderDate="">
+                    <OrderBy>
+                        <Attribute Desc="Y" Name="OrderDate"/>
+                    </OrderBy>
+                    <OrderHoldType HoldType="" Status="" StatusQryType=""/>
+                </Order>
+            </Input>
+            <Template>
+                <OrderList>
+                    <Order BillToID="" BuyerOrganizationCode=""
+                        BuyerUserId="" CustomerContactID=""
+                        CustomerEMailID="" CustomerFirstName=""
+                        CustomerLastName="" CustomerPONo=""
+                        CustomerPhoneNo="" CustomerZipCode=""
+                        DisplayStatusDescription="" DocumentType=""
+                        DraftOrderFlag="" EnterpriseCode="" EntryType=""
+                        HoldFlag="" MaxOrderStatusDesc=""
+                        MultipleStatusesExist="" OrderDate=""
+                        OrderHeaderKey="" OrderName="" OrderNo=""
+                        OverallStatus="" SellerOrganizationCode=""
+                        Status="" TaxExemptFlag=""
+                        TaxExemptionCertificate="" isHistory="">
+                        <PriceInfo Currency="" TotalAmount=""/>
+                        <PersonInfoBillTo AddressLine1=""/>
+                        <PersonInfoShipTo AddressID="" AddressLine1=""
+                            AddressLine2="" City="" Company=""
+                            Country="" CountryDesc="" DayPhone=""
+                            Department="" EMailID="" EveningPhone=""
+                            FirstName="" IsAddressVerified=""
+                            IsCommercialAddress="" LastName=""
+                            MiddleName="" MobilePhone="" PersonID=""
+                            PersonInfoKey="" State="" Suffix="" Title=""
+                            TitleDesc="" ZipCode="" isHistory=""/>
+                    </Order>
+                </OrderList>
+            </Template>
+        </API>
+    </mashup>
+    <mashup id="customerSearch_getBusinessCustomerList">
+        <API Name="getCompleteCustomerList">
+            <Input>
+                <Customer ApplyQueryTimeout="Y"
+                    CallingOrganizationCode="" CustomerID=""
+                    CustomerType="01"
+                    DisplayLocalizedFieldInLocale="xml:CurrentUser:/User/@Localecode"
+                    MaximumRecords="" QueryTimeout="">
+                    <BuyerOrganization OrganizationName="" PrimaryUrl=""/>
+                    <CustomerAdditionalAddressList>
+                        <CustomerAdditionalAddress>
+                            <PersonInfo ZipCode=""/>
+                        </CustomerAdditionalAddress>
+                    </CustomerAdditionalAddressList>
+                    <OrderBy>
+                        <Attribute Desc="N" Name="CustomerID"/>
+                    </OrderBy>
+                    <CustomerContactList>
+                        <CustomerContact DayPhone="" EmailID=""
+                            EmailIDQryType="" FirstName="" LastName="" MiddleName="">
+                            <User DisplayUserID="" DisplayUserIDQryType=""/>
+                            <CustomerAdditionalAddressList>
+                                <CustomerAdditionalAddress>
+                                    <PersonInfo ZipCode=""/>
+                                </CustomerAdditionalAddress>
+                            </CustomerAdditionalAddressList>
+                        </CustomerContact>
+                    </CustomerContactList>
+                </Customer>
+            </Input>
+            <Template>
+                <CustomerList>
+                    <Customer CustomerID="" CustomerKey=""
+                        CustomerType="" OrganizationCode="" Status="">
+                        <BuyerOrganization OrganizationName=""
+                            TaxExemptFlag="" TaxExemptionCertificate=""/>
+                        <DefaultBillToAddress AddressType="">
+                            <PersonInfo/>
+                        </DefaultBillToAddress>
+                        <CustomerContactList>
+                            <CustomerContact CustomerContactID=""
+                                DayPhone="" EmailID="" FirstName=""
+                                LastName="" MiddleName="" Title="" UserID="">
+                                <DefaultBillToAddress AddressType="">
+                                    <PersonInfo/>
+                                </DefaultBillToAddress>
+                            </CustomerContact>
+                        </CustomerContactList>
+                        <CustomerCurrencyList>
+                            <CustomerCurrency Currency=""
+                                CustomerCurrencyKey="" IsDefaultCurrency=""/>
+                        </CustomerCurrencyList>
+                    </Customer>
+                </CustomerList>
+            </Template>
+        </API>
+    </mashup>
+    <mashup id="customerSearch_getCustomerList">
+        <API Name="getCompleteCustomerList">
+            <Input>
+                <Customer ApplyQueryTimeout="Y"
+                    CallingOrganizationCode="" CustomerID=""
+                    CustomerType="02"
+                    DisplayLocalizedFieldInLocale="xml:CurrentUser:/User/@Localecode"
+                    MaximumRecords="" QueryTimeout="">
+                    <CustomerContactList>
+                        <CustomerContact DayPhone="" EmailID=""
+                            EmailIDQryType="" FirstName="" LastName="" MiddleName="">
+                            <User DisplayUserID="" DisplayUserIDQryType=""/>
+                            <CustomerAdditionalAddressList>
+                                <CustomerAdditionalAddress>
+                                    <PersonInfo ZipCode=""/>
+                                </CustomerAdditionalAddress>
+                            </CustomerAdditionalAddressList>
+                        </CustomerContact>
+                    </CustomerContactList>
+                </Customer>
+            </Input>
+            <Template>
+                <CustomerList>
+                    <Customer CustomerID="" CustomerKey=""
+                        CustomerType="" OrganizationCode="" Status="">
+                        <CustomerContactList>
+                            <CustomerContact CustomerContactID=""
+                                DayPhone="" EmailID="" FirstName=""
+                                LastName="" MiddleName="" Title="" UserID="">
+                                <CustomerAdditionalAddressList>
+                                    <CustomerAdditionalAddress
+                                    CustomerAdditionalAddressKey=""
+                                    IsBillTo="" IsDefaultBillTo=""
+                                    IsDefaultShipTo=""
+                                    IsDefaultSoldTo="" IsShipTo="" IsSoldTo="">
+                                    <PersonInfo/>
+                                    </CustomerAdditionalAddress>
+                                </CustomerAdditionalAddressList>
+                                <DefaultBillToAddress AddressType="">
+                                    <PersonInfo/>
+                                </DefaultBillToAddress>
+                            </CustomerContact>
+                        </CustomerContactList>
+                        <BuyerOrganization OrganizationCode=""
+                            OrganizationName="" TaxExemptFlag="" TaxExemptionCertificate=""/>
+                    </Customer>
+                </CustomerList>
+            </Template>
+        </API>
+    </mashup>
+</mashups>
