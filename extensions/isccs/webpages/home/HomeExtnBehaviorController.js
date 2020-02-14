@@ -46,6 +46,15 @@ return _dojodeclare("extn.home.HomeExtnBehaviorController",
 		 extnType : 			'ADD'
 
 	}
+,
+	 		{
+		 mashupRefId : 			'getEnvPropertyID'
+,
+		 mashupId : 			'getEnvPropertyID'
+,
+		 extnType : 			'ADD'
+
+	}
 
 	]
 

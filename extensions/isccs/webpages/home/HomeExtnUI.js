@@ -17,7 +17,29 @@ scDefine(["dojo/text!./templates/HomeExtn.html","scbase/loader!dojo/_base/declar
 ){
 return _dojodeclare("extn.home.HomeExtnUI",
 				[], {
-			templateString: templateText
+			templateString: templateText,
+namespaces : {
+		targetBindingNamespaces :
+		[
+			{
+	  scExtensibilityArrayItemId: 'extn_TargetNamespaces_0'
+						,
+	  value: 'extn_AccessKey'
+						
+			}
+			
+		],
+		sourceBindingNamespaces :
+		[
+			{
+	  scExtensibilityArrayItemId: 'extn_SourceNamespaces_0'
+						,
+	  value: 'extn_AccessKey'
+						
+			}
+			
+		]
+	}
 	
 	
 	

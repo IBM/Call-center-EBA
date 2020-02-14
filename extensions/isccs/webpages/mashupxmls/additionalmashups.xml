@@ -14,7 +14,21 @@
         <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
         <APINamespace inputNS="extn_getCountryList_input" outputNS="extn_getCountryList"/>
         <AlternateResourceIds/>
-    </mashup>    
+    </mashup>
+		<mashup description="" endpoint="EP_ORDER" id="getEnvPropertyID"
+			mashuptype="XAPI" resourceId="" transactional="true">
+		<API Name="getProperty">
+			<Input>
+				<GetProperty PropertyName=""/>
+			</Input>
+			<Template>
+				<GetProperty PropertyValue=""/>
+			</Template>
+		</API>
+		<classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
+		<APINamespace inputNS="getEnvPropertyID_input" outputNS="getEnvPropertyID_output"/>
+		<AlternateResourceIds/>
+	</mashup>
 	<mashup description="get order details for EBA pop up.." endpoint="EP_ORDER" id="extn_eba_getOrderDetails" mashuptype="XAPI" resourceId="" transactional="true">
         <API Name="getOrderDetails">
             <Input>
