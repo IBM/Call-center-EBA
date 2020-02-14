@@ -1,6 +1,6 @@
 Steps in the Call Center EBA Integration
 
-1) Place the extensions folder contents  in the <CallCenter Installation Path>/extensions/
+1) Place the extensions folder contents  in the "<CallCenter Installation Path>"/extensions/
 
 2) To get the access key, Go to eba.ibm.com login with your ID and go to the settings tab
 
@@ -8,6 +8,8 @@ Steps in the Call Center EBA Integration
 
 4) Run the nodeJS script in the access_token folder by replacing the necessary parameter and the PATH to the generated privatekey
 
-5) copy the obtained access key and go to <OMS Installation folder>/extensions/isccs/webpages/home and open HomeExtn.js and replace the acess token in LoadEBA function and also provide the login user name name
+5) copy the obtained access key and update the custoer_overrides file in properties folder and place it in "<CallCenter Installation Path>"/properties/
+  
+6) Restart the Application server
 
 
