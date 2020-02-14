@@ -3,10 +3,10 @@ const jwt = require('jsonwebtoken')
 
 const settings = {
 ...     url: 'https://eba.ibm.com/',
-...     key: 'private_key.pem',
+...     key: '<PATH TO private key Generated>',
 ...     iss: 'https://idaas.iam.ibm.com',
 ...     sub: '<EMAIL>',
-...     name: '<NAME'
+...     name: '<NAME>'
 ... }
 let claims = {
 ...     iss: settings.iss,
