@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ScreenBundle screenBundleId="extn.home.portlets.OrderPortletExtnBundle" screenId="extn.home.portlets.OrderPortletExtn">
-    <BundleEntries>
-        <BundleEntry bundleEntryId="extn_button_Button_label"
-            bundleKey="textYes" bundleValueFn="_scSimpleBundle"
-            property="label" type="WIDGET" uId="extn_button"/>
-    </BundleEntries>
-</ScreenBundle>
