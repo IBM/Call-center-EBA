@@ -3,12 +3,33 @@
     <ScreenExtension extnClassName="HomeExtn" extnPackage="extn.home"
         originalScreen="isccs.home.Home"
         originalScreenPackage="isccs.home" type="diffrential">
+        <Namespaces>
+            <SourceNamespaces>
+                <Source isExtn="true"
+                    scExtensibilityArrayItemId="extn_SourceNamespaces_0" value="extn_AccessKey"/>
+            </SourceNamespaces>
+            <TargetNamespaces>
+                <Target isExtn="true"
+                    scExtensibilityArrayItemId="extn_TargetNamespaces_0" value="extn_AccessKey"/>
+            </TargetNamespaces>
+        </Namespaces>
         <Subscribers>
             <Local>
                 <Subscriber eventId="afterScreenInit" isExtn="true" sequence="19">
-                    <Handler methodName="test"/>
+                    <Handler methodName="LoadEBA"/>
                 </Subscriber>
             </Local>
         </Subscribers>
+        <MashupRefs>
+            <Behavior>
+                <MashupRef extnType="ADD"
+                    mashupId="extn_eba_getOrderDetails" mashupRefId="extn_eba_getOrderDetails"/>
+                <MashupRef extnType="ADD"
+                    mashupId="extn_eba_getSessionDetails" mashupRefId="extn_eba_getSessionDetails"/>
+                <MashupRef extnType="ADD"
+                    mashupId="extn_getCompleteOrderDetails" mashupRefId="extn_getCompleteOrderDetails"/>
+                <MashupRef extnType="ADD" mashupId="getEnvPropertyID" mashupRefId="getEnvPropertyID"/>
+            </Behavior>
+        </MashupRefs>
     </ScreenExtension>
 </ExtensionMetaData>

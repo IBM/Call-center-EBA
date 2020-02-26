@@ -118,7 +118,8 @@
 <html lang="<%=localeCode%>">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<title><%= SCUILocalizationHelper.getString(uiContext, "ISCCS_Product_Name")%></title>
+		<!-- <title><%= SCUILocalizationHelper.getString(uiContext, "ISCCS_Product_Name")%></title> -->
+			<title>Media saturn</title>
 		<script>
 			<%
 			if(!SCUtil.isVoid(documentDomain)){
@@ -127,7 +128,6 @@
 			<%}
 			%>
 		</script>
-		
 		<link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/isccs/resources/css/icons/images/logo_window.ico"/>
 		
 
@@ -305,7 +305,7 @@
 			<%}
 			%>
 		</script>
-		<script src="https://eba.ibm.com/static/assistant.js" > </script>
+		<script src="https://eba.ibm.com/static/assistant.js"></script>
 		<style> 
 		.eba-oms-close-popup-button .eba-oms-close-popup-button-img {
             filter: invert(0%) !important;

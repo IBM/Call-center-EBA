@@ -3,12 +3,15 @@
     className="com.sterlingcommerce.ui.web.platform.controller.SCUIXAPIMashupController"
     controllerId="extn.home.HomeExtnBehaviorController"
     requestMethodSupported="POST" screenId="extn.home.HomeExtn">
-	<MashupRefs>
-        <MashupRef  mashupId="extn_eba_getOrderDetails"
+    <MashupRefs>
+        <MashupRef extnType="ADD" mashupId="extn_eba_getOrderDetails"
             mashupRefId="extn_eba_getOrderDetails" permissionId=""/>
-		<MashupRef  mashupId="extn_eba_getSessionDetails"
+        <MashupRef extnType="ADD" mashupId="extn_eba_getSessionDetails"
             mashupRefId="extn_eba_getSessionDetails" permissionId=""/>
-		<MashupRef  mashupId="extn_getCompleteOrderDetails"
+        <MashupRef extnType="ADD"
+            mashupId="extn_getCompleteOrderDetails"
             mashupRefId="extn_getCompleteOrderDetails" permissionId=""/>
+        <MashupRef extnType="ADD" mashupId="getEnvPropertyID"
+            mashupRefId="getEnvPropertyID" permissionId=""/>
     </MashupRefs>
 </Controller>

@@ -18,35 +18,18 @@ return _dojodeclare("extn.home.HomeExtnBehaviorController",
 				[_scExtnServerDataController], {
 
 			
-			 screenId : 			'extn.home.HomeExtn',
-			 	mashupRefs : 	[
-		{
-		 mashupRefId : 			'extn_eba_getOrderDetails'
-,
-		 mashupId : 			'extn_eba_getOrderDetails'
-,
-		 extnType : 			'ADD'
+			 screenId : 			'extn.home.HomeExtn'
 
-	}
-,
-	 		{
-		 mashupRefId : 			'extn_eba_getSessionDetails'
-,
-		 mashupId : 			'extn_eba_getSessionDetails'
-,
-		 extnType : 			'ADD'
+			
+			
+			
+			
+			
+						,
 
-	}
-,
-	 		{
-		 mashupRefId : 			'extn_getCompleteOrderDetails'
-,
-		 mashupId : 			'extn_getCompleteOrderDetails'
-,
-		 extnType : 			'ADD'
-
-	}
-,
+			
+			
+			 mashupRefs : 	[
 	 		{
 		 mashupRefId : 			'getEnvPropertyID'
 ,
@@ -58,9 +41,6 @@ return _dojodeclare("extn.home.HomeExtnBehaviorController",
 
 	]
 
-			
-			
-			
 }
 );
 });

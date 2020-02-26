@@ -25,8 +25,7 @@ function(
 		ebaSetup: function() {		
 				var Code = _scScreenUtils.getModel(this,"extn_AccessKey");
 				IBM_EBA.setup({
-				    access_token: Code.GetProperty.PropertyValue)
-				    agent_name: 'Expert Assistant',
+				   access_token: Code.GetProperty.PropertyValue,
 					disable_button: false,
 					disable_shadow: true
 				})
@@ -50,28 +49,9 @@ function(
 				_scModelUtils.setStringValueAtModelPath("GetProperty.PropertyName", propertyName, getPropertyInput);
 				_isccsUIUtils.callApi(currentPopupScreen, getPropertyInput, "getEnvPropertyID");
 			},
-	openOrderDetailsPopup: function (screen,targetModel) {
-			_scBaseUtils.removeBlankAttributes(targetModel);
-			currentPopupScreen.openOrderSummaryPopup(event, targetModel,screen);
-		},
-	openOrderSummaryPopup: function(event, orderArgs,screen) {
-		var isPopup = true;
-		var item = orderArgs;
-		isPopup = _scScreenUtils.isPopup(screen);
-		if (!(_scBaseUtils.equals(true, isPopup))) {
-			var detailsScreen = "isccs.order.wizards.orderSummary.OrderSummaryWizard";
-			if (!(_scBaseUtils.isVoid(detailsScreen))) {
-				var order = null;
-				order = _scModelUtils.createNewModelObjectWithRootKey("Order");
-				_scModelUtils.addModelObjectAsChildToModelObject("Order", item, order);
-				order = _isccsOrderUtils.getEditorInputForOrder(order);
-				_isccsOrderUtils.openOrder(screen, orderArgs);
-			}
-		}
-	},
         LoadEBA: function() {
 			currentPopupScreen = this;
-			currentPopupScreen.getCode();   
+			currentPopupScreen.getCode();  
 }
 });
 });
