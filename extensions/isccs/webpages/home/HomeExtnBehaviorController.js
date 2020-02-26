@@ -31,33 +31,6 @@ return _dojodeclare("extn.home.HomeExtnBehaviorController",
 			
 			 mashupRefs : 	[
 	 		{
-		 mashupRefId : 			'extn_eba_getOrderDetails'
-,
-		 mashupId : 			'extn_eba_getOrderDetails'
-,
-		 extnType : 			'ADD'
-
-	}
-,
-	 		{
-		 mashupRefId : 			'extn_eba_getSessionDetails'
-,
-		 mashupId : 			'extn_eba_getSessionDetails'
-,
-		 extnType : 			'ADD'
-
-	}
-,
-	 		{
-		 mashupRefId : 			'extn_getCompleteOrderDetails'
-,
-		 mashupId : 			'extn_getCompleteOrderDetails'
-,
-		 extnType : 			'ADD'
-
-	}
-,
-	 		{
 		 mashupRefId : 			'getEnvPropertyID'
 ,
 		 mashupId : 			'getEnvPropertyID'

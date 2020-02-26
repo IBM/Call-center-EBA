@@ -307,22 +307,22 @@
 		</script>
 		<script src="https://eba.ibm.com/static/assistant.js"></script>
 		<style> 
-		.eba-close-popup-button .eba-close-popup-button-img {
+		.eba-oms-close-popup-button .eba-oms-close-popup-button-img {
             filter: invert(0%) !important;
             opacity: 1 !important;
         }
-        .eba-popup-mode .eba-popup {
+        .eba-oms-popup-mode .eba-oms-popup {
             border-radius: 2px !important;
             width: 320px !important;
             max-height: 530px !important;
         }
-        body .eba-button {
+        body .eba-oms-button {
             background-color: black !important;
         }
-        .eba-closed .eba-button .eba-button-icon-closed {
+        .eba-oms-closed .eba-oms-button .eba-oms-button-icon-closed {
             display: none !important;
         }
-        .eba-closed .eba-button:before {
+        .eba-oms-closed .eba-oms-button:before {
             content: "EA";
             font-family: Didot, serif;
             font-size: 24px;
