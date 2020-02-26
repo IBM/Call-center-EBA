@@ -14,8 +14,19 @@
         <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
         <APINamespace inputNS="extn_getCountryList_input" outputNS="extn_getCountryList"/>
         <AlternateResourceIds/>
+    </mashup>    
+	<mashup description="get order details for EBA pop up.." endpoint="EP_ORDER" id="extn_eba_getOrderDetails" mashuptype="XAPI" resourceId="" transactional="true">
+        <API Name="getOrderDetails">
+            <Input>
+                <Order EnterpriseCode="" OrderHeaderKey="" OrderNo=""/>
+            </Input>
+            <Template/>
+        </API>
+        <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
+        <APINamespace inputNS="extn_eba_getOrderDetails_input" outputNS="extn_eba_getOrderDetails_output"/>
+        <AlternateResourceIds/>
     </mashup>
-		<mashup description="" endpoint="EP_ORDER" id="getEnvPropertyID"
+	<mashup description="" endpoint="EP_ORDER" id="getEnvPropertyID"
 			mashuptype="XAPI" resourceId="" transactional="true">
 		<API Name="getProperty">
 			<Input>
@@ -29,17 +40,6 @@
 		<APINamespace inputNS="getEnvPropertyID_input" outputNS="getEnvPropertyID_output"/>
 		<AlternateResourceIds/>
 	</mashup>
-	<mashup description="get order details for EBA pop up.." endpoint="EP_ORDER" id="extn_eba_getOrderDetails" mashuptype="XAPI" resourceId="" transactional="true">
-        <API Name="getOrderDetails">
-            <Input>
-                <Order EnterpriseCode="" OrderHeaderKey="" OrderNo=""/>
-            </Input>
-            <Template/>
-        </API>
-        <classInformation name="com.ibm.isccs.common.mashups.SCCSBaseMashup"/>
-        <APINamespace inputNS="extn_eba_getOrderDetails_input" outputNS="extn_eba_getOrderDetails_output"/>
-        <AlternateResourceIds/>
-    </mashup>
 	<mashup description="get EBA Session details" endpoint="EP_ORDER" id="extn_eba_getSessionDetails" mashuptype="XAPI" resourceId="" transactional="true">
         <API Name="getCommonCodeList">
             <Input/>

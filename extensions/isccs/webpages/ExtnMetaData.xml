@@ -2,20 +2,8 @@
 <Extensions>
     <Identifier id="">
         <UIExtns>
-            <UIExtn appScreen="isccs.home.portlets.OrderPortlet"
-                extnScreen="extn.home.portlets.OrderPortletExtn" type="diffrential"/>
-            <UIExtn appScreen="isccs.customer.search.CustomerSearch"
-                extnScreen="extn.customer.search.CustomerSearchExtn" type="diffrential"/>
-            <UIExtn appScreen="isccs.customer.search.CustomerListScreen"
-                extnScreen="extn.customer.search.CustomerListScreenExtn" type="diffrential"/>
-            <UIExtn appScreen="isccs.customer.details.CustomerDetails"
-                extnScreen="extn.customer.details.CustomerDetailsExtn" type="diffrential"/>
             <UIExtn appScreen="isccs.home.Home"
                 extnScreen="extn.home.HomeExtn" type="diffrential"/>
-            <UIExtn appScreen="isccs.home.portlets.ProductPortlet"
-                extnScreen="extn.home.portlets.ProductPortletExtn" type="diffrential"/>
-            <UIExtn appScreen="isccs.order.details.OrderSummary"
-                extnScreen="extn.order.details.OrderSummaryExtn" type="diffrential"/>
         </UIExtns>
     </Identifier>
 </Extensions>

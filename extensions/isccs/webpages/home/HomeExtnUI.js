@@ -17,8 +17,15 @@ scDefine(["dojo/text!./templates/HomeExtn.html","scbase/loader!dojo/_base/declar
 ){
 return _dojodeclare("extn.home.HomeExtnUI",
 				[], {
-			templateString: templateText,
-namespaces : {
+			templateString: templateText
+	
+	
+	
+	
+	
+	
+					,	
+	namespaces : {
 		targetBindingNamespaces :
 		[
 			{
@@ -40,12 +47,7 @@ namespaces : {
 			
 		]
 	}
-	
-	
-	
-	
-	
-	
+
 	
 	,
 	hotKeys: [ 
@@ -57,6 +59,7 @@ namespaces : {
 ,subscribers : {
 
 local : [
+
 
 {
 	  eventId: 'afterScreenInit'

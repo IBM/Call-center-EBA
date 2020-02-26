@@ -18,9 +18,19 @@ return _dojodeclare("extn.home.HomeExtnBehaviorController",
 				[_scExtnServerDataController], {
 
 			
-			 screenId : 			'extn.home.HomeExtn',
-			 	mashupRefs : 	[
-		{
+			 screenId : 			'extn.home.HomeExtn'
+
+			
+			
+			
+			
+			
+						,
+
+			
+			
+			 mashupRefs : 	[
+	 		{
 		 mashupRefId : 			'extn_eba_getOrderDetails'
 ,
 		 mashupId : 			'extn_eba_getOrderDetails'
@@ -58,9 +68,6 @@ return _dojodeclare("extn.home.HomeExtnBehaviorController",
 
 	]
 
-			
-			
-			
 }
 );
 });
