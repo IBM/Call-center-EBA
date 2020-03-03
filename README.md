@@ -7,7 +7,7 @@ The IBM Sterling Call Center for Commerce experience can also be enhanced by ext
 
 The Embedded Business AI (“EBA”) framework is an open, hybrid multi-cloud deployable, omni-channel, enterprise-class, digital AI framework that can be used by developers to enable advanced domain-specific process automations for business users. Unlike other dialog management systems that use rule-based reasoning and predicate logic, with EBA you describe your business domain to the machine in a simple, consistent, complete and straightforward way. IBM makes use of EBA to create an omni-present “digital twin” that supports the human counterparts wherever they may conduct their business.
 
-Integration of EBA into the Call Center for Commerce application makes it easier and faster for the CSR to obtain relevant information about the customer they are interacting with and about the customer's orders and transactions. This results in quicker query resolutions and provides enriching and improved interactions between the customer and the CSR.
+Integration of EBA into the IBM Sterling Call Center for Commerce application makes it easier and faster for the CSR to obtain relevant information about the customer they are interacting with and about the customer's orders and transactions. This results in quicker query resolutions and provides enriching and improved interactions between the customer and the CSR.
 
 In this code pattern, you will understand how to integrate the Embedded Business Assistant with IBM Sterling Call Center for Commerce.
 
@@ -302,7 +302,7 @@ Since you have provided the access key which was generated using your login info
 * **Learn about the Intelligent Customer Care Call Center**: Find out how [IBM Sterling enables intelligent orchestration of customer transactions across back-end record systems](https://developer.ibm.com/blogs/intelligent-customer-care-call-center/).
 * **Build machine learning models for Intelligent Customer Care Call Center**: Learn how to [build a machine learning model for calculating product order return propensity](https://developer.ibm.com/patterns/use-icp4d-to-build-the-machine-learning-model-for-return-propensity/) using IBM Cloud Pak for Data and the Watson Machine Learning Add-On.
 * **IBM Sterling Order Management**: Interested in learning more about IBM Sterling Order Management? Check out this series on how to manage [Growing Order Data](https://developer.ibm.com/components/sterling/series/growing-order-data-is-it-really-an-issue-blog-series).
-* **Learn about IBM Sterling**: Enjoyed this Code Pattern? Check out code patterns, blogs, articlees and series on IBM Sterling products at [IBM Sterling on IBM Developer](https://developer.ibm.com/components/sterling/).
+* **Learn about IBM Sterling**: Enjoyed this Code Pattern? Check out code patterns, blogs, articles and series on IBM Sterling products at [IBM Sterling on IBM Developer](https://developer.ibm.com/components/sterling/).
 
 
 # License
