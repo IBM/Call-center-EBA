@@ -79,6 +79,8 @@ cd Call-center-EBA
 
 ## 2. Generate access key
 
+**Note: This code pattern works best when you use the Google Chrome/Opera browsers.**
+
 We need to generate an access key in the Embedded Business Assistant using which we can connect EBA with IBM Sterling Call Center for Commerce.
 
 Go to [eba.ibm.com](https://eba.ibm.com) and log in using your IBMId.
@@ -252,19 +254,20 @@ cd <install_location_for_IBM_WebSphere>/AppServer/profiles/AppSrv01/bin/
 
 ## 6. Start the deployed application on WAS
 
-It is possible that you have more than one deployed application on the WebSphere server. 
+In most cases, there will only be one application deployed to the WebSphere server - that is the one that you just deployed.
+However, it is possible that you have more than one deployed application on the WebSphere server. Follow the instructions in this step in case you have more than one deployed application on your WebSphere server.
 
-If you do not have any other deployed applications, or if you have deployed applications but none of them are running (as indicated by a green arrow under the `Application Status`), then you should be able to see that the application you deployed is already running.
+If you do not have any other deployed applications, or if you have deployed applications but none of them are running (an application is running/started if there is a green arrow under the `Application Status` for that application), then you should be able to see that the application you deployed is already running.
 
 <p align="center">
   <img alt="Application is already running" src="https://user-images.githubusercontent.com/8854447/75705577-a3680680-5c89-11ea-845d-aa615f5d768f.png">
 </p>
 
-If that is not the case, you will have to start the application that you had deployed in the previous steps in order to see the changes reflected.
+However, if the application you deployed is not already running, you will have to start the application in order to see the changes reflected.
 
-If a different application is already running , you can select that application and click on `Stop`.
+**Note: Only one application can be running at a time, so if you see a different application that is already in the running state, you will have to select that application and click on `Stop` in order to stop it, before you start your application.**
 
-Once that application has been stopped, select your deployed application and click on `Start`.
+Once you have ensured that no other application is running, select your deployed application and click on `Start`. Once your application starts, you should see a green arrow next to your application and a message that says the application was started successfully.
 
 <p align="center">
   <img alt="Application is started" src="https://user-images.githubusercontent.com/8854447/75705497-7b78a300-5c89-11ea-98c4-03de3775353f.png">
@@ -289,15 +292,15 @@ And this is how the IBM Sterling Call Center for Commerce application looks now,
 
 Since you have provided the access key which was generated using your login information in Embedded Business Assistant, the EBA extension on the IBM Sterliing Call Center for Commerce application should be able to pull up this information and you should be able to see your name on the dashboard as shown below:
 
-**TODO - EBA extension asks to sign in - it opens up a new tab in the browser where I can sign in but even after signing in the extension does not reflect it.**
-
 <p align="center">
-  <img alt="EBA is already logged in" src="https://user-images.githubusercontent.com/8854447/75723877-2d749700-5cab-11ea-8ce2-8148bb493b7c.png">
+  <img alt="EBA is already logged in" src="https://user-images.githubusercontent.com/8854447/75778280-7f5a0300-5d25-11ea-8fc8-3f5d182f1177.png">
 </p>
 
 
 # Learn more
 
+* **Learn about the Intelligent Customer Care Call Center**: Find out how [IBM Sterling enables intelligent orchestration of customer transactions across back-end record systems](https://developer.ibm.com/blogs/intelligent-customer-care-call-center/).
+* **Build machine learning models for Intelligent Customer Care Call Center**: Learn how to [build a machine learning model for calculating product order return propensity](https://developer.ibm.com/patterns/use-icp4d-to-build-the-machine-learning-model-for-return-propensity/) using IBM Cloud Pak for Data and the Watson Machine Learning Add-On.
 * **IBM Sterling Order Management**: Interested in learning more about IBM Sterling Order Management? Check out this series on how to manage [Growing Order Data](https://developer.ibm.com/components/sterling/series/growing-order-data-is-it-really-an-issue-blog-series).
 * **Learn about IBM Sterling**: Enjoyed this Code Pattern? Check out code patterns, blogs, articlees and series on IBM Sterling products at [IBM Sterling on IBM Developer](https://developer.ibm.com/components/sterling/).
 
