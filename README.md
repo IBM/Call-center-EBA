@@ -47,11 +47,11 @@ In this code pattern, you will understand how to integrate the Embedded Business
 
 # Prerequisites
 
-* [IBM Sterling Order Management](https://www.ibm.com/products/order-management)
+* [IBM Sterling Order Management](https://www.ibm.com/products/order-management): Installation instructions can be found within the [IBM Sterling Order Management Documentation](https://www.ibm.com/support/knowledgecenter/en/SS6PEW_10.0.0/omV10_welcome.html) on the IBM Knowledge Center.
 
-* [IBM Sterling Call Center for Commerce](https://www.ibm.com/products/order-management/add-ons#section-heading-4)
+* [IBM Sterling Call Center for Commerce](https://www.ibm.com/products/order-management/add-ons#section-heading-4): Installation instructions can be found within the [IBM Call Center for Commerce Documentation](https://www.ibm.com/support/knowledgecenter/SSYLSL_10.0.0/ccc_maps/cccV10_welcome.html) on the IBM Knowledge Center.
 
-* [IBM WebSphere Application Server](https://www.ibm.com/cloud/websphere-application-server)
+* [IBM WebSphere Application Server](https://www.ibm.com/cloud/websphere-application-server): WAS is a system requirement for the IBM Sterling Order Management Software and the relevant version of WAS will be provided as part of the IBM Sterling Order Management Software purchase. Installation instructions can be found within the [Websphere Application Server Documentation](https://www.ibm.com/support/knowledgecenter/SSEQTP/mapfiles/product_welcome_was.html) on the IBM Knowledge Center.
 
 
 # Steps
