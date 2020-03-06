@@ -15,7 +15,7 @@ In this code pattern, you will understand how to integrate the Embedded Business
 # Architecture Diagram
 
 <p align="center">
-  <img alt="Architecture diagram" src="https://user-images.githubusercontent.com/8854447/75724385-4598e600-5cac-11ea-8419-fb1a8faf4568.png">
+  <img alt="Architecture diagram" src="https://user-images.githubusercontent.com/8854447/76106188-5eebac00-5fa4-11ea-9856-ff15f05d3ad1.png">
 </p>
 
 
